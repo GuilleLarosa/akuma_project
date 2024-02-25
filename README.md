@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Guille La Rosa</h1>
 <h3 align="center">A passionate mechanical engineer from Argentina</h3>
 
-- 🔭 I’m currently working on [Akuma](https://guillelarosa.github.io/akuma/)
+- 🔭 I’m currently working on [Akuma](https://guillelarosa.github.io/akuma_project/)
 
 - 🌱 I’m currently learning **Web debeloper**
 
