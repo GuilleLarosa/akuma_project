@@ -1,0 +1,217 @@
+@import "../base/list";
+
+.products-body {
+    background: #DD5E89;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, nth($color_green,3), #DD5E89);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, nth($color_green,3), #DD5E89); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    height: 100vh;
+}
+
+.products-section {
+    h2{
+        color: nth($color_grey, 1);
+        font-weight: 300;
+        height: 25px;
+    }
+
+    h3{
+        color: nth($color_grey, 1);
+        font-size: 20px;
+        font-weight: 500;
+        padding: 0 5px;
+    }
+
+    button {
+        font-size: 12px;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        background-color: nth($color_purple, 4);
+        border: none;
+        border-radius: 6px;
+        height: 35px;
+        padding: 0 25px;
+      
+        a{
+            font-style: none;
+            color: nth($color_grey,2);
+            text-decoration: none;
+        }
+      }
+      
+    button:hover {
+        background-color: nth($color_green, 4);
+    }
+    
+    button:active {
+        animation: puff-out-center 2s cubic-bezier(0.165, 0.840, 0.440, 1.000) 1s both;
+    }
+    
+}
+
+
+
+.grinders {
+    display: grid;
+    grid-template-columns: 60px 300px 200px 1fr 60px;
+    grid-template-rows: 80px repeat(4, 150px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.soldid-bg { 
+    grid-area: 2 / 3 / 6 / 5;
+
+    background-color: nth($color_grey,5);
+    border-radius: 12px; 
+}
+
+.transp-bg { 
+    grid-area: 2 / 2 / 6 / 5;
+    
+    background-color: white;
+    opacity: 0.3;
+    border-radius: 12px;
+    
+}
+
+.item1-pic { 
+    grid-area: 2 / 3 / 3 / 4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    border-bottom: 1px solid nth($color_grey,5);
+
+    img{
+        height: 125px;
+    }
+}
+
+.item1-text { 
+    grid-area: 2 / 4 / 3 / 5;
+
+    // display: flex;
+    // justify-content: left;
+    // align-items: top;
+    z-index: 2;
+    padding: 15px 0 0 0;
+    border-bottom: 1px solid nth($color_grey,5);
+
+}
+
+.item2-pic { 
+    grid-area: 3 / 3 / 4 / 4; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    border-bottom: 1px solid nth($color_grey,5);
+
+    img{
+        height: 135px;
+    }
+}
+.item2-text { 
+    grid-area: 3 / 4 / 4 / 5;
+
+    display: flex;
+    justify-content: left;
+    align-items: top;
+    z-index: 2;
+    padding: 15px 0 0 0;
+    border-bottom: 1px solid nth($color_grey,5);
+
+}
+.item3-pic { 
+    grid-area: 4 / 3 / 5 / 4; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    border-bottom: 1px solid nth($color_grey,5);
+
+    img{
+        height: 135px;
+    }
+}
+.item3-text { 
+    grid-area: 4 / 4 / 5 / 5;
+
+    display: flex;
+    justify-content: left;
+    align-items: top;
+    z-index: 2;
+    padding: 15px 0 0 0;
+    border-bottom: 1px solid nth($color_grey,5);
+
+}
+
+
+.product-1 { 
+    grid-area: 2 / 2 / 6 / 5;
+    z-index: 2;
+    padding: 15px;
+    
+}
+
+.item4-pic { 
+    grid-area: 5 / 3 / 6 / 4; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+    img{
+        height: 135px;
+        filter: blur(7px);
+    }
+}
+.item4-text { 
+    grid-area: 5 / 4 / 6 / 5;
+
+    display: flex;
+    justify-content: left;
+    align-items: top;
+    z-index: 2;
+    padding: 15px 0 0 0;
+
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: 60px 300px 200px 1fr 60px;
+    grid-template-rows: 80px repeat(2, 150px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    .item2-pic {
+        border: none;
+        img{
+            filter: blur(7px);
+        }
+    }
+    .item2-text {
+        border: none;
+    }
+}
+
+.filters {
+    display: grid;
+    grid-template-columns: 60px 300px 200px 1fr 60px;
+    grid-template-rows: 80px repeat(2, 150px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-bottom: 60px;
+
+    .item2-pic {
+        border: none;
+    }
+    .item2-text {
+        border: none;
+    }
+}

@@ -1,0 +1,26 @@
+@import "../base/list";
+
+.footer {
+    .social-media { 
+        grid-area: 4 / 1 / 5 / 3;
+        display: flex;
+        justify-content: center;
+        padding: 5px 20px;
+        background-color: nth($color_purple,4);
+        border: none;
+        border-radius: 0;
+        place-items: center;
+
+        h6{ 
+            margin: 0;
+            padding: 0 0 0 10px;
+            font-size: 10px;
+            color: nth($color_grey,2);
+        }
+
+        img {
+            height: 35px;
+            padding: 0 10px;
+        }
+    }
+}

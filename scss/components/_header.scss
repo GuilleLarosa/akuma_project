@@ -1,0 +1,12 @@
+@import "../base/list";
+
+header{
+
+    display: flexbox;
+    justify-content: space-around;
+
+    a{
+        color: nth($color_grey, 6) !important;
+    }
+
+}
