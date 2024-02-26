@@ -1,67 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link a la hoja de estilos -->
-    <link rel="stylesheet" href="../style.css">
 
-    <!-- Icono de la pestaña -->
-    <link rel="icon" href="../Media/Icons/Textura.ico" type="image/x-icon">
+    <!-- Configuracion de la pagina -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/style.css">
+
+        <!-- Icono de la pestaña -->
+        <link rel="icon" href="Media/Icons/Textura.ico" type="image/x-icon">
     
-    <!-- Titulo de la pestaña -->
-    <title>Review</title>
-</head>
-<body>
+        <!-- Titulo de la pestaña -->
+        <title>Akuma</title>
 
-    <header>
+        <!--CDN Bootstrap CSS -->  
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-        <nav class="menu-container">
-            <ul class="menu">
-                <ul class="menu-product">
-                    <li class="P1"><a href="../#Grinders">GRINDERS</a></li>
-                    <li class="P2"><a href="../#Boxes">BOXES</a></li>
-                    <li class="P3"><a href="../#Trays">TRAYS</a></li>
-                </ul>
+    </head>
 
-                <ul class="menu-other">
-                    <li class="ReviewsB"><a href="../Pages/reviews.html">REVIEWS</a></li>
-                    <li class="Conctact"><a href="../Pages/contact.html">CONTACT</a></li>
-                </ul>
-            </ul>
-        </nav>
+    <body class="reviews-body">
+      <!--CDN Bootstrap JS --> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-        <div>
-            <a href="../index.html"><img class="logo-fixed" src="../Media/Icons/Logo-ANG-3.png" alt=""></a>
-        </div>
+      <Header>
+          <!-- Nav de Bootstrap -->
+          <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #B492FF;"> 
+              <div class="container-fluid">
+                <a class="navbar-brand Akuma" href="../index.html">AKUMA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-    </header> 
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-    <section class="review">
-        <ul>
-        <li><img src="../Media/Images/R1.png" alt=""></li>
-        <li><img src="../Media/Images/R2.png" alt=""></li>
-        <li><img src="../Media/Images/R3.png" alt=""></li>
-        <li><img src="../Media/Images/R4.png" alt=""></li>
-        <li><img src="../Media/Images/R5.png" alt=""></li>
-        <li><img src="../Media/Images/R6.png" alt=""></li>
-        </ul>  
-    </section>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Products
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../pages/products.html#grinders">Grinders</a></li>
+                        <li><a class="dropdown-item" href="../pages/products.html#boxes">Boxes</a></li>
+                        <li><a class="dropdown-item" href="../pages/products.html#boxes">Filters</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Limited Edition</a></li>
+                      </ul>
+                    </li>
 
-    <footer class="footer-container">
-        <ul class="footer-social">
-            <li><p>Follow us</p></li>
-            <li>
-                <a href="https://www.etsy.com/shop/AkumaNoGrind" target="_blank"><img src="../Media/Icons/etsy.png" alt=""></a>
-                <a href="https://www.instagram.com/akuma.no.grind/" target="_blank"><img src="../Media/Icons/instagram.png" alt=""></a>
-            </li>
-        </ul>
+                    <li class="nav-item nav-item_rev">
+                      <a class="nav-link active" aria-current="page" href="#reviews">Reviews</a>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </nav>
+      </Header> 
 
-        <div>
-            <h3>Copyright © 2024  Akuma No Grind. All rights reserved</h3>
-        </div>
+        <section class="reviews" id="reviews">
+            <div class="review_grid">
+                <div class="rev1">
+                    <div>
+                        <img class="imgR" src="../media/images/re1.png" alt="">
+                        <img class="imgR" src="../media/images/re4.png" alt="">
+                        <img class="imgR" src="../media/images/re7.png" alt="">
+                    </div>
+                </div>
+                <div class="rev2">
+                    <div>
+                        <img class="imgR" src="../media/images/re2.png" alt="">
+                        <img class="imgR" src="../media/images/re9.png" alt="">
+                    </div> 
+                </div>
+                <div class="rev3"> 
+                    <div>
+                        <img class="imgR" src="../media/images/re3.png" alt="">
+                        <img class="imgR" src="../media/images/re8.png" alt="">
+                        <img class="imgR" src="../media/images/re10.png" alt="">
+                    </div>
+                </div>
+                <div class="rev4">
+                    <div>               
+                        <img class="imgR" src="../media/images/re5.png" alt="">
+                        <img class="imgR" src="../media/images/re6.png" alt="">
+                    </div> 
+                </div>
+            </div>
+        </section>
+   
+        <footer class="footer">
+          <div class="social-media">
+            <a href="https://www.instagram.com/akuma.no.grind"><img src="../media/icons/instagram.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/AkumaNoGrind"><img src="../media/icons/etsy.png" alt=""></a>
+            <h6>Copyright © 2024  Akuma No Grind. All rights reserved</h6>
+          </div>
+        </footer>
+       
+     </body>
 
-    </footer>
-    
-</body>
 </html>

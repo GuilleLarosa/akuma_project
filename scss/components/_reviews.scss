@@ -1,0 +1,95 @@
+.reviews-body {
+    background: #DD5E89;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, nth($color_green,3), #DD5E89);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, nth($color_green,3), #DD5E89); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    h2{
+        width: 100%;
+        top: 100px;
+        display: flex;  
+        justify-content: center;
+        font-family: 'Montserrat';
+        font-size: 3vw !important;
+        font-weight: 500;
+        z-index:10;
+        color: #282036 !important; 
+    }
+}
+
+
+.review_grid {
+    padding: 60px 0 160px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80px repeat(4, 1fr) 80px;
+    grid-template-rows: 80px, 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+
+.imgR {
+    width: 300px;
+    border-radius: 12px;
+    padding: 5px;
+}
+    
+.rev-title { grid-area: 1 / 2 / 2 / 6; }
+.rev1 { grid-area: 2 / 2 / 3 / 3; }
+.rev2 { grid-area: 2 / 3 / 3 / 4; }
+.rev3 { grid-area: 2 / 4 / 3 / 5; }
+.rev4 { grid-area: 2 / 5 / 3 / 6;}
+
+
+.rev1, .rev2, .rev3, .rev4{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 1400px) {
+    
+    .review_grid {
+        padding: 60px 0 160px 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 40px repeat(3, 1fr) 40px;
+        grid-template-rows: 80px, 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 20px;
+    }
+
+    .rev4{
+        display: none;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    
+    .review_grid {
+        padding: 60px 0 160px 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 40px  1fr 40px;
+        grid-template-rows: 80px, 1fr, 1fr, 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+    }
+
+    .rev1 { grid-area: 2 / 2 / 3 / 3; }
+    .rev2 { grid-area: 4 / 2 / 5 / 3; }
+    .rev3 { grid-area: 6 / 2 / 7 / 3; }
+
+    .imgR {
+        width: 80vw;
+        border-radius: 12px;
+        padding: 5px;
+    }
+
+
+    .rev4{
+        display: none;
+    }
+
+}
+
